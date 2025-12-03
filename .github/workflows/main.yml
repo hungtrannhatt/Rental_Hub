@@ -1,0 +1,58 @@
+name: CI/CD Pipeline
+
+# Chạy khi có code push vào nhánh main hoặc tạo Pull Request
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  # Job 1: Kiểm tra phía Server (Backend)
+  server-check:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./server # Chỉ định thư mục làm việc là server
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+          cache-dependency-path: server/package-lock.json
+
+      - name: Install Dependencies
+        run: npm install
+
+      # Nếu bạn chưa viết test, bước này có thể tạm bỏ qua hoặc để echo
+      - name: Run Tests
+        run: npm test --if-present
+
+  # Job 2: Kiểm tra phía Client (Frontend)
+  client-build:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./client # Chỉ định thư mục làm việc là client
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+          cache: "npm"
+          cache-dependency-path: client/package-lock.json
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
