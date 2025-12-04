@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="300" zoomAndPan="magnify" viewBox="0 0 224.87999 41.25" height="55" preserveAspectRatio="xMidYMid meet" version="1.0">
+    <defs>
+        <style>
+            /* Giảm font-size xuống 24px để vừa vặn chiều cao 41.25px */
+            .rental-text-art { font-family: 'Arial Black', Arial, sans-serif; font-weight: 900; font-size: 24px; }
+            .hub-text-art { font-family: Arial, sans-serif; font-weight: bold; font-size: 24px; }
+        </style>
+    </defs>
+    
+    <path d="M 10,32 C 10,32 5,2 80,5 C 130,8 150,2 200,10 C 210,12 215,20 205,28 C 180,38 120,38 80,35 C 40,32 30,38 10,32 Z" 
+          fill="#e41b23" opacity="0.85" />
+          
+    <g fill="#000000">
+        <text x="20" y="29" class="rental-text-art">Rental</text>
+        <text x="112" y="29" class="hub-text-art">Hub</text>
+    </g>
+</svg>

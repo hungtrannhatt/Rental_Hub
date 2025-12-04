@@ -271,7 +271,7 @@ function AddPostForm({ onFinish, onCancel, initialValues }) {
                         label="Tiêu đề"
                         rules={[{ required: true, message: 'Vui lòng nhập tiêu đề' }]}
                     >
-                        <Input placeholder="Ví dụ: Phòng trọ giá rẻ gần DH Bách Khoa" />
+                        <Input placeholder="Ví dụ: Phòng trọ giá rẻ gần DH Công Nghệ" />
                     </Form.Item>
                 </Col>
                 <Col span={12}>

@@ -75,7 +75,7 @@ function Admin() {
                     </div>
                     {!collapsed && (
                         <div className={cx('logo-text')}>
-                            <h1>PhongTro123</h1>
+                            <h1>RentalHub</h1>
                             <span>Admin Portal</span>
                         </div>
                     )}
