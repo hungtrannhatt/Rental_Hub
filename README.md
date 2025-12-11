@@ -135,6 +135,30 @@ Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, man
 - Ứng dụng mobile iOS/Android sử dụng chung API.
 
 ---
+# ** Một số hình ảnh của ứng dụng**
+
+- Giao diện mới vào trang
+![giao diện đầu vào](https://github.com/user-attachments/assets/59236c04-1905-4ec3-b603-4b8c4d29c44c)
+- Chức năng tìm kiếm có áp dụng AI
+![ai search](https://github.com/user-attachments/assets/5cc84eec-0a8d-478c-93e0-763032b46efc)
+- Chức năng chatbot AI
+![ai chat bot](https://github.com/user-attachments/assets/464f2dac-607c-4d7e-9a9e-6291bbbc81d1)
+- Chức năng chat với người đăng bài
+  ![chat với người cho thuê](https://github.com/user-attachments/assets/d02a8d11-949c-49ce-a377-3c701fe0b82d)
+- Trang thông tin cá nhân của tài khoản admin
+  ![trang thông tin tài khoản admin](https://github.com/user-attachments/assets/45712fb1-1e51-4db2-bf31-f1f7c062cfeb)
+- Trang thông tin cá nhân của tài khoản user
+![giao diện user](https://github.com/user-attachments/assets/f0b8d0a3-6d33-4b15-908b-483ba0e51d95)
+- Chức năng thêm, sửa, xóa bài đăng
+![thêm hoặc sửa bài đăng](https://github.com/user-attachments/assets/bd910fd7-742f-4c59-8743-199957194fe9)
+- Giao diện trang admin
+  ![giao diện trang admin](https://github.com/user-attachments/assets/4420f070-a73a-48a1-a211-e434fb78e50f)
+- Chức năng duyệt hoặc từ chối bài đăng của tài khoản admin
+  ![quyền duyệt, từ chối bài đăng](https://github.com/user-attachments/assets/36598438-e515-4b18-96dd-f9bc1defe377)
+- Chức năng nạp tiền (kết hợp với vnpay test)
+  ![nạp tiền](https://github.com/user-attachments/assets/7b777b39-daa5-4550-9766-b9806f9a10b9)
+
+---
 
 # **🙏 Lời cảm ơn**
 
