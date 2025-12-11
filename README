@@ -1,0 +1,147 @@
+# **Rental Hub – Hệ thống đăng tin & tìm kiếm phòng trọ thông minh**
+
+**Môn học:** Phát triển ứng dụng doanh nghiệp  
+**Nhóm thực hiện:** Nhóm 7  
+**Thành viên:**
+
+- **Đinh Tiến Hùng**
+- **Đặng Quốc Huy**
+- **Trần Nhật Hưng**
+
+---
+
+**🏠 Giới thiệu dự án**
+
+**Rental Hub** là một nền tảng đăng tin cho thuê phòng trọ hiện đại, hướng tới việc giải quyết những vấn đề lớn của thị trường thuê trọ hiện nay như:
+
+- Tin đăng bị trôi, khó tiếp cận khách hàng thực.
+- Người thuê mất thời gian nhắn tin từng chủ phòng để hỏi thông tin.
+- Dữ liệu phân tán, thiếu minh bạch, không có công cụ hỗ trợ tra cứu giá – tiện ích tập trung.
+- Thiếu hệ thống tư vấn tự động và công cụ lọc thông minh.
+
+Dự án hướng đến việc số hóa toàn bộ quy trình thuê trọ, mang lại một **trải nghiệm minh bạch – nhanh chóng – an toàn**, đồng thời hỗ trợ hiệu quả cho cả chủ nhà và người tìm phòng.
+
+---
+
+**🎯 Mục tiêu & Giá trị**
+
+**1. Tự động hóa trải nghiệm thuê trọ**
+
+- Tư vấn bằng AI từ database có sẵn.
+- Tìm kiếm phòng trọ thông minh bằng AI Search.
+- Chat và liên hệ chủ phòng ngay trên nền tảng.
+
+**2. Kết nối hiệu quả & minh bạch**
+
+- Công cụ lọc mạnh mẽ: giá, diện tích, loại phòng…
+- Xem chi tiết bài đăng và thông tin chủ phòng rõ ràng.
+
+**3. Tăng độ tin cậy và an toàn**
+
+- Hệ thống xác thực tài khoản (OAuth2, JWT).
+- Phân quyền API (User/Admin).
+- Duyệt bài đăng qua hệ thống Admin Portal.
+
+---
+
+**⚙️ Chức năng chính**
+
+**🔐 Xác thực & phân quyền**
+
+- Đăng ký, đăng nhập, đăng nhập nhanh qua OAuth 2.0.
+- Quản lý phiên bằng JWT.
+- Phân quyền: User / Admin.
+
+**🔎 Tìm kiếm & xem phòng trọ**
+
+- Tìm kiếm AI theo từ khóa thông minh.
+- Lọc bài theo giá, diện tích, loại phòng…
+- Xem chi tiết + liên hệ chủ phòng.
+
+**📝 Quản lý bài đăng**
+
+- Tạo bài đăng phòng trọ với hình ảnh.
+- Admin duyệt bài, từ chối bài và gửi thông báo qua email.
+- Người dùng quản lý các bài đăng cá nhân.
+
+**💬 Tư vấn AI**
+
+- Chat AI dựa trên database có sẵn để gợi ý phòng phù hợp.
+
+**💳 Thanh toán**
+
+- Tích hợp cổng thanh toán **VNPay**.
+
+**📡 Real-time**
+
+- Tích hợp **Socket.IO** cho chức năng Chat.
+
+---
+
+**🛠 Tech Stack**
+
+**Backend**
+
+- Node.js (Runtime)
+- Express.js (Framework)
+- MongoDB Atlas (Database)
+- Mongoose (ODM)
+- JWT / OAuth2
+- Socket.IO (Real-time)
+- Cloudinary (Upload ảnh)
+- Render.com (Deploy Backend)
+
+**Frontend**
+
+- React.js (SPA)
+- Vite (Build Tool)
+- Axios (HTTP Client)
+- React Hooks (State)
+- Vercel (Deploy Frontend)
+
+**AI**
+
+- Google Gemini API – phục vụ tính năng tư vấn và tìm kiếm thông minh.
+
+---
+
+**🧱 Kiến trúc & Hệ thống**
+
+**Khả năng mở rộng**
+
+- Node.js non-blocking, hỗ trợ hàng ngàn request đồng thời.
+- MongoDB indexing giúp tối ưu truy vấn dữ liệu.
+- Kiến trúc module hóa dễ mở rộng tính năng như: chatbot, ví điện tử, bản đồ phòng trọ…
+
+**Bảo mật**
+
+- Hash mật khẩu trước khi lưu DB.
+- Xác thực đa lớp: JWT + OAuth2.
+- Phân quyền API rõ ràng giữa User và Admin.
+
+---
+
+**🚀 Demo**
+
+**Website:**  
+🔗 [https://rental-hub-client.vercel.app/](https://rental-hub-client.vercel.app/)
+
+**Video Demo:**  
+(Thêm link video nếu nhóm có)
+
+---
+
+**🔮 Hướng phát triển tương lai**
+
+- Mở rộng bộ lọc theo bản đồ / khu vực.
+- Tính năng đánh giá chất lượng phòng từ người thuê thật.
+- Báo cáo vi phạm để loại bỏ tin rác/lừa đảo.
+- Hỗ trợ đa dạng cổng thanh toán (Momo, ViettelPay…).
+- Ứng dụng mobile iOS/Android sử dụng chung API.
+
+---
+
+**🙏 Lời cảm ơn**
+
+Nhóm xin gửi lời cảm ơn đến **giảng viên** đã truyền đạt kiến thức và định hướng giúp chúng em hoàn thành dự án này.  
+Cảm ơn các bạn đã quan tâm và theo dõi!
