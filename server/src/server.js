@@ -19,7 +19,12 @@ const cors = require("cors");
 const path = require("path");
 const cookie = require("cookie");
 
-app.use(cors({ origin: '*', credentials: true }));
+app.use(cors({
+  // Cho phép cả Link Vercel (khi chạy thật) và Localhost (khi bạn test máy nhà)
+  origin: [process.env.CLIENT_URL, 'http://localhost:5173'], 
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true // Cho phép gửi cookie/token
+}));
 const connectDB = require("./config/ConnectDB");
 const routes = require("./routes/index");
 const { verifyToken } = require("./services/tokenSevices");
