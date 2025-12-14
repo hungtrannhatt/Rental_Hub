@@ -36,6 +36,14 @@ function LoginUser() {
         const { credential } = response; // Nhận ID Token từ Google
         try {
             const res = await requestLoginGoogle({ credential });
+
+            if (res.accessToken) {
+                localStorage.setItem('accessToken', res.accessToken);
+            }
+            if (res.user) { // Nếu backend trả về cả info user
+                 localStorage.setItem('user', JSON.stringify(res.user));
+            }
+
             message.success(res.message);
             setTimeout(() => {
                 window.location.reload();
