@@ -33,24 +33,23 @@ function LoginUser() {
     };
 
     const handleSuccess = async (response) => {
-        const { credential } = response; // Nhận ID Token từ Google
+        // 1. Log ngay khi Google trả về kết quả (Để xem Popup có thành công ko)
+        console.log("1. Google đã phản hồi:", response); 
+        
+        const { credential } = response;
         try {
+            // 2. Log trước khi gọi API backend
+            console.log("2. Bắt đầu gọi API Backend với token:", credential);
+    
             const res = await requestLoginGoogle({ credential });
-            console.log("Dữ liệu login trả về:", res);
-            if (res.accessToken) {
-                localStorage.setItem('accessToken', res.accessToken);
-            }
-            if (res.user) { // Nếu backend trả về cả info user
-                 localStorage.setItem('user', JSON.stringify(res.user));
-            }
-
-            message.success(res.message);
-            setTimeout(() => {
-                window.location.reload();
-            }, 1000);
-            navigate('/');
+            
+            // 3. Log sau khi API trả về (Cái bạn đang mong chờ)
+            console.log("3. Dữ liệu login trả về:", res);
+    
+            // ... code xử lý tiếp ...
         } catch (error) {
-            message.error(error.response.data.message);
+            // 4. Log nếu bị lỗi
+            console.error("4. LỖI XẢY RA:", error);
         }
     };
 
