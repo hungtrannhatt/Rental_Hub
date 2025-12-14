@@ -19,8 +19,7 @@ const cors = require("cors");
 const path = require("path");
 const cookie = require("cookie");
 
-app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
-
+app.use(cors({ origin: '*', credentials: true }));
 const connectDB = require("./config/ConnectDB");
 const routes = require("./routes/index");
 const { verifyToken } = require("./services/tokenSevices");
